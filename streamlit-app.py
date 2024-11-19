@@ -26,6 +26,10 @@ with st.sidebar:
  iris = st.sidebar.slider("Setosa:", 18, 100, 25) 
  st.write(f"Vous avez selectionne: {iris} ")
 
+with st.sidebar.container():
+ st.write("Section 1")
+ st.radio("Choix :", ["SETOSA1","SETOSA2","SETOSA3"])
+
 #st.write(df.head(5))
  
    
