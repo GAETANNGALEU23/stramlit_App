@@ -23,7 +23,7 @@ st.altair_chart(chart, use_container_width=True)
 
 with st.sidebar:
  st.title('Iris visualisation')
- iris = st.sidebar.selectbox("Setosa:", 18, 100, 25) 
+ iris = st.sidebar.slider("Setosa:", 18, 100, 25) 
  st.write(f"Vous avez selectionne: {iris} ")
 
 #st.write(df.head(5))
