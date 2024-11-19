@@ -30,6 +30,6 @@ with st.sidebar.container():
  st.write("Section 1")
  st.radio("Choix :", ["SepalLength","SepalWidth","PetalLength","PetalWith","Species"])
 
-st.write(df.head(5))
+st.write(df.head(5)) 
  
    
