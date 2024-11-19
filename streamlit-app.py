@@ -21,6 +21,9 @@ chart = alt.Chart(df).mark_point().encode(x='SepalLength' , y='PetalLength')
 #Afficher le chart sur Streamlit
 st.altair_chart(chart, use_container_width=True) 
 
+with st.sidebar:
+ st.title('Iris visualisation')
+
 #st.write(df.head(5))
  
    
