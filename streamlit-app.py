@@ -19,7 +19,7 @@ st.altair_chart(chart, use_container_width=True)
 
 chart = alt.Chart(df).mark_point().encode(x='SepalLength' , y='PetalLength')
 #Afficher le chart sur Streamlit
-st.altair_char(chart, use_container_width=True)
+st.altair_chart(chart, use_container_width=True) 
 
 #st.write(df.head(5))
  
