@@ -28,7 +28,7 @@ with st.sidebar:
 
 with st.sidebar.container():
  st.write("Section 1")
- st.radio("Choix :", ["SETOSA1","SETOSA2","SETOSA3"])
+ st.radio("Choix :", ["SepalLength","SepalWidth","PetalLength","PetalWith","Species"])
 
 st.write(df.head(5))
  
