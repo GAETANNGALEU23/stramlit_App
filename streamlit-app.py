@@ -21,6 +21,9 @@ chart = alt.Chart(df).mark_point().encode(x='SepalLength' , y='PetalLength')
 #Afficher le chart sur Streamlit
 st.altair_chart(chart, use_container_width=True) 
 
+#les 05 premieres lignes de notre tableau
+st.write(df.head())
+
 with st.sidebar:
  st.title('Iris visualisation') 
  iris = st.sidebar.slider("Setosa:", 18, 100, 25) 
