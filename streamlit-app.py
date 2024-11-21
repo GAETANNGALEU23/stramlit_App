@@ -31,7 +31,7 @@ with st.sidebar:
 #definir un bouton avec Action
 def afficher_messsage():
    st.write("Bienvenur sur notre Tableau de Bord!")
-  if st.sidebar.button("Commencer")
+     if st.sidebar.button("Commencer")
          afficher_message()
  
  #texte d'entree
