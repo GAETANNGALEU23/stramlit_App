@@ -22,13 +22,16 @@ chart = alt.Chart(df).mark_point().encode(x='SepalLength' , y='PetalLength')
 st.altair_chart(chart, use_container_width=True) 
 
 with st.sidebar:
- st.title('Iris visualisation')
+ st.title('Iris visualisation') 
  iris = st.sidebar.slider("Setosa:", 18, 100, 25) 
  st.write(f"Vous avez selectionne: {iris} ")
 
 with st.sidebar.container():
  st.write("Section 1")
  st.radio("Choix :", ["SepalLength","SepalWidth","PetalLength","PetalWith","Species"])
+
+#texte d'entree
+st.sidebar.text_input() 
 
 st.write(df.head(5)) 
  
