@@ -34,7 +34,8 @@ with st.sidebar.container():
  st.radio("Choix :", ["SepalLength","SepalWidth","PetalLength","PetalWith","Species"])
 
 #texte d'entree
-with st.sidebar.text_input("entrer une valeur") 
+with st.sidebar
+st.sidebar.text_input("entrer une valeur") 
 
 
  
