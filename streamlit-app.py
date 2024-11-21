@@ -36,8 +36,8 @@ st.write(f"Vous avez selectionne: {iris} ")
 
 #pour selectionner les cases
 with st.sidebar.container():
-st.write("Section 1")
-st.radio("Choix :", ["SepalLength","SepalWidth","PetalLength","PetalWith","Species"])
+ st.write("Section 1")
+ st.radio("Choix :", ["SepalLength","SepalWidth","PetalLength","PetalWith","Species"])
 
 #selecteur de liste
 st.sidebar.selectbox("Setosa:", 18, 100, 25) 
