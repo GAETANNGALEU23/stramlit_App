@@ -26,6 +26,7 @@ st.write(df.head())
 
 with st.sidebar:
  st.title('Iris visualisation') 
+ st.sidebar.subheader("A Propos")
  
  #texte d'entree
 st.sidebar.text_input("entrer une valeur") 
