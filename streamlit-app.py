@@ -34,8 +34,8 @@ with st.sidebar.container():
  st.radio("Choix :", ["SepalLength","SepalWidth","PetalLength","PetalWith","Species"])
 
 #texte d'entree
-st.sidebar.text_input() 
+with st.sidebar.text_input() 
 
-st.write(df.head(5)) 
+
  
    
