@@ -39,6 +39,10 @@ with st.sidebar.container():
  st.write("Section 1")
  st.radio("Choix :", ["SepalLength","SepalWidth","PetalLength","PetalWith","Species"])
 
+#selecteur de liste
+st.sidebar.selectbox("Setosa:", 18, 100, 25) 
+st.sidebar.multiselect("Setosa:", 18, 100, 25)
+
 
 
 
