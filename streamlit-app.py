@@ -26,15 +26,20 @@ st.write(df.head())
 
 with st.sidebar:
  st.title('Iris visualisation') 
+ 
+ #texte d'entree
+st.sidebar.text_input("entrer une valeur") 
+
+#pour le curseur
  iris = st.sidebar.slider("Setosa:", 18, 100, 25) 
  st.write(f"Vous avez selectionne: {iris} ")
 
+#pour selectionner les cases
 with st.sidebar.container():
  st.write("Section 1")
  st.radio("Choix :", ["SepalLength","SepalWidth","PetalLength","PetalWith","Species"])
 
-#texte d'entree
-st.sidebar.text_input("entrer une valeur") 
+
 
 
  
