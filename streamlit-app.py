@@ -16,6 +16,7 @@ st.title("Mon premier tableau de bord Streamlit\n")
 # st.table(df)
 
 df.groupby(['Species']).sum().plot(kind="bar")
+print(df)
 
 #creer un char Altair
 chart = alt.Chart(df).mark_bar().encode( x='SepalLength' , y='SepalWidth')
