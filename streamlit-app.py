@@ -14,7 +14,7 @@ st.title("Mon premier tableau de bord Streamlit\n")
 
 grouped = df.groupby(['Species']).sum()
 fig, ax = plt.subplots()
-grouped.plot(kind="bar", ax=ax
+grouped.plot(kind="bar", ax=ax)
 ax.set_title("Somme des Valeurs par Espece")
 ax.set_ylabel("Valeur")
 ax.set_xlabel("Espece")
