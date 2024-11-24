@@ -26,7 +26,7 @@ st.write(df.head())
 
 with st.sidebar:
  st.title('Iris visualisation') 
- st.sidebar.subheader("differentes fonctionnalites de notre bord :")
+ st.sidebar.subheader("differentes fonctionnalites de notre DASHBOARD :")
 
 #definir un bouton avec Action
 #def afficher_messsage():
