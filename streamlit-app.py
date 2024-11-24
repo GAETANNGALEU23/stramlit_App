@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import altair as alt 
-import seaborn as sn
 import matplotlib as mpl
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
