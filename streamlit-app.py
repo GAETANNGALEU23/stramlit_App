@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import altair as alt 
-#import seaborn as sn
-#import matplotlib as mpl
+import seaborn as sn
+import matplotlib as mpl
 
  
 # Charger les données
@@ -12,8 +12,13 @@ df = pd.read_csv('Iris.csv', delimiter=';')
 # Créer un titre
 st.title("Mon premier tableau de bord Streamlit\n")
 
-a = df.groupby(['Species']).sum().plot(kind="bar")
-st.write(a)
+grouped = df.groupby(['Species']).sum()
+fig, ax = plt.subplots()
+grouped.plot(kind="bar", ax=ax
+ax.set_title("Somme des Valeurs par Espece")
+ax.set_ylabel("Valeur")
+ax.set_xlabel("Espece")
+st.pyplot(fig)
  
 # Afficher les données dans un tableau
 # st.table(df)
