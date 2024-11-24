@@ -2,8 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import altair as alt 
-import seaborn as sns
-import matplotlib as plt
+
 
  
 # Charger les données
@@ -12,10 +11,6 @@ df = pd.read_csv('Iris.csv', delimiter=';')
 # Créer un titre
 st.title("Mon premier tableau de bord Streamlit\n")
 
-st.subheader('Graphique de distribution des caractéristiques')
-fig, ax = plt.subplots()
-sns.pairplot(df, hue="species", palette="viridis")
-st.pyplot(fig)
  
 # Afficher les données dans un tableau
 # st.table(df)
