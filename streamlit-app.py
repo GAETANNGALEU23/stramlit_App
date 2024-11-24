@@ -7,6 +7,8 @@ df = pd.read_csv('Iris.csv', delimiter=';')
  
 # Créer un titre
 st.title("Mon premier tableau de bord Streamlit\n")
+
+sn.countplot(A, x="Species", hue="Species")
  
 # Afficher les données dans un tableau
 # st.table(df)
