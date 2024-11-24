@@ -29,10 +29,10 @@ with st.sidebar:
  st.sidebar.subheader("differentes fonctionnalites de notre bord :")
 
 #definir un bouton avec Action
-def afficher_messsage():
- st.write("Bienvenur sur notre Tableau de Bord!")
-  if st.sidebar.button("Commencer")
-   afficher_message()
+#def afficher_messsage():
+ #st.write("Bienvenur sur notre Tableau de Bord!")
+  #if st.sidebar.button("Commencer")
+   #afficher_message()
  
  #texte d'entree
 st.sidebar.text_input("entrer une valeur") 
