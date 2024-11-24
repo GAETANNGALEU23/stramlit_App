@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import altair as alt 
-import matplotlib.pyplot as plt
+
 
 
  
@@ -13,9 +13,6 @@ df = pd.read_csv('Iris.csv', delimiter=';')
 # Créer un titre
 st.title("Mon premier tableau de bord Streamlit\n")
 
-fig, ax = plt.subplots()
-ax.plot([1, 2, 3], [4, 5, 6])
-st.pyplot(fig)
  
 # Afficher les données dans un tableau
 # st.table(df)
