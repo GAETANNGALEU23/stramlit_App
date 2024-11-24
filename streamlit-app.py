@@ -3,6 +3,8 @@ import pandas as pd
 import altair as alt 
 import seaborn as sn
 import matplotlib as mpl
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
  
 # Charger les données
 df = pd.read_csv('Iris.csv', delimiter=';')
