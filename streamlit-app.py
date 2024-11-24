@@ -1,6 +1,7 @@
 import streamlit as st 
 import pandas as pd
 import altair as alt 
+import seaborn as sn
  
 # Charger les données
 df = pd.read_csv('Iris.csv', delimiter=';')
