@@ -16,6 +16,9 @@ st.title("Mon premier tableau de bord Streamlit\n")
 # st.table(df)
 
 #creer un char Altair
+chart = alt.Chart(df).mark_bar().encode( x='PetalLength' , y='PetalWidth')
+
+#creer un char Altair
 chart = alt.Chart(df).mark_bar().encode( x='SepalLength' , y='SepalWidth')
 
 #Afficher le chart sur Streamlit
