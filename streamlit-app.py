@@ -12,7 +12,6 @@ df = pd.read_csv('Iris.csv', delimiter=';')
 # Créer un titre
 st.title("Mon premier tableau de bord Streamlit\n")
 
-st.write(df.groupby(['Species']).sum().plot(kind="bar"))
  
 # Afficher les données dans un tableau
 # st.table(df)
